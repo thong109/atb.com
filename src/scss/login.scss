@@ -2,7 +2,13 @@
 @use "_base/base"as *;
 
 .section-login {
-  padding: 0.48rem 0;
+  min-height: 100vh;
+
+  .login-wrapper {
+    background-color: $color-light;
+    margin: 0 auto;
+    padding: 0.48rem 0 0.16rem;
+  }
 
   label {
     margin-bottom: 0.04rem;
@@ -98,5 +104,14 @@
   .login-logo {
     width: 0.88rem;
     margin: 0 auto 0.24rem;
+  }
+
+  @include desktop {
+    padding: 0.72rem 0;
+    background-color: #0072F0;
+
+    .login-wrapper {
+      max-width: 430px;
+    }
   }
 }

@@ -1,5 +1,10 @@
 .section-login {
-  padding: 0.48rem 0;
+  min-height: 100vh;
+}
+.section-login .login-wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 0.48rem 0 0.16rem;
 }
 .section-login label {
   margin-bottom: 0.04rem;
@@ -94,5 +99,14 @@
 .section-login .login-logo {
   width: 0.88rem;
   margin: 0 auto 0.24rem;
+}
+@media print, (min-width: 768px) {
+  .section-login {
+    padding: 0.72rem 0;
+    background-color: #0072F0;
+  }
+  .section-login .login-wrapper {
+    max-width: 430px;
+  }
 }
 /*# sourceMappingURL=login.css.map */
