@@ -82,6 +82,7 @@
   }
 
   .login-title {
+    font-family: $font-atb;
     font-weight: 700;
     font-size: 0.24rem;
     line-height: calc(32 / 24);
@@ -103,6 +104,7 @@
 
   .login-logo {
     width: 0.88rem;
+    height: 0.61rem;
     margin: 0 auto 0.24rem;
   }
 

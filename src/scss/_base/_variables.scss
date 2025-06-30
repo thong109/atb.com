@@ -6,6 +6,15 @@ $font-default: "Inter",
 sans-serif;
 $font-DIN: "din-2014",
 sans-serif;
+$font-atb: "ATB_TT_Norms";
+
+@font-face {
+  font-family: 'ATB_TT_Norms';
+  src: url('./fonts/ATB_TT_Norms_Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $fontsize-default: 0.16rem;
 $fontsize-title: 0.15rem;
 $fontweight-light: 300;

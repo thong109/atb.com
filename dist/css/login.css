@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "ATB_TT_Norms";
+  src: url("./fonts/ATB_TT_Norms_Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 .section-login {
   min-height: 100vh;
 }
@@ -79,6 +85,7 @@
   text-align: center;
 }
 .section-login .login-title {
+  font-family: "ATB_TT_Norms";
   font-weight: 700;
   font-size: 0.24rem;
   line-height: 1.3333333333;
@@ -98,6 +105,7 @@
 }
 .section-login .login-logo {
   width: 0.88rem;
+  height: 0.61rem;
   margin: 0 auto 0.24rem;
 }
 @media print, (min-width: 768px) {

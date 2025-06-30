@@ -1,2 +1,7 @@
-
+@font-face {
+  font-family: "ATB_TT_Norms";
+  src: url("./fonts/ATB_TT_Norms_Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 /*# sourceMappingURL=message.css.map */
