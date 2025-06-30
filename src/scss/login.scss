@@ -15,6 +15,8 @@
     font-size: 0.14rem;
     line-height: calc(20 / 14);
     display: block;
+    color: #44444d;
+    font-weight: 600;
   }
 
   input {
@@ -22,6 +24,7 @@
     width: 100%;
     background: transparent;
     padding: 0.12rem;
+    height: 0.5rem;
 
     &:focus {
       border-color: $color-background-primary;
@@ -56,18 +59,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.48rem 0 0.08rem;
+    margin: 0.58rem 0 0.08rem;
+    font-size: 0.12rem;
+    line-height: calc(15 / 12);
 
     &>a {
       font-weight: 600;
       color: $color-background-primary;
-      font-size: 0.12rem;
-      line-height: calc(16 / 12);
+      padding: 0 0.03rem;
     }
 
     &>span {
       width: 0.11rem;
+      height: 0.15rem;
       text-align: center;
+      cursor: default;
+      white-space: pre;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0.015rem;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        background-color: #44444d;
+      }
     }
   }
 
@@ -85,11 +104,11 @@
     font-family: $font-atb;
     font-weight: 700;
     font-size: 0.24rem;
-    line-height: calc(32 / 24);
+    line-height: 0.32rem;
     text-align: center;
     margin-bottom: 0.24rem;
-    padding-bottom: 0.24rem;
     position: relative;
+    padding: 0.04rem 0 0.24rem;
 
     &::before {
       position: absolute;
@@ -103,9 +122,13 @@
   }
 
   .login-logo {
-    width: 0.88rem;
-    height: 0.61rem;
     margin: 0 auto 0.24rem;
+    text-align: center;
+
+    img {
+      width: 0.88rem;
+      height: 0.61008rem;
+    }
   }
 
   @include desktop {
@@ -114,6 +137,13 @@
 
     .login-wrapper {
       max-width: 430px;
+    }
+  }
+
+  @include tablet {
+    .login-wrapper {
+      min-width: 375px;
+      width: 68.33%;
     }
   }
 }

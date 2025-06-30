@@ -17,12 +17,15 @@
   font-size: 0.14rem;
   line-height: 1.4285714286;
   display: block;
+  color: #44444d;
+  font-weight: 600;
 }
 .section-login input {
   border: 0.01rem solid #000025;
   width: 100%;
   background: transparent;
   padding: 0.12rem;
+  height: 0.5rem;
 }
 .section-login input:focus {
   border-color: #0072F0;
@@ -63,17 +66,34 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0.48rem 0 0.08rem;
+  margin: 0.58rem 0 0.08rem;
+  font-size: 0.12rem;
+  line-height: 1.25;
 }
 .section-login .footer-wrapper > a {
   font-weight: 600;
   color: #0072F0;
-  font-size: 0.12rem;
-  line-height: 1.3333333333;
+  padding: 0 0.03rem;
 }
 .section-login .footer-wrapper > span {
   width: 0.11rem;
+  height: 0.15rem;
   text-align: center;
+  cursor: default;
+  white-space: pre;
+  position: relative;
+}
+.section-login .footer-wrapper > span::before {
+  position: absolute;
+  content: "";
+  width: 0.015rem;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 0;
+  background-color: #44444d;
 }
 .section-login .footer-copyright {
   font-weight: 400;
@@ -88,11 +108,11 @@
   font-family: "ATB_TT_Norms";
   font-weight: 700;
   font-size: 0.24rem;
-  line-height: 1.3333333333;
+  line-height: 0.32rem;
   text-align: center;
   margin-bottom: 0.24rem;
-  padding-bottom: 0.24rem;
   position: relative;
+  padding: 0.04rem 0 0.24rem;
 }
 .section-login .login-title::before {
   position: absolute;
@@ -104,17 +124,26 @@
   left: 0;
 }
 .section-login .login-logo {
-  width: 0.88rem;
-  height: 0.61rem;
   margin: 0 auto 0.24rem;
+  text-align: center;
 }
-@media print, (min-width: 768px) {
+.section-login .login-logo img {
+  width: 0.88rem;
+  height: 0.61008rem;
+}
+@media print, (min-width: 430px) {
   .section-login {
     padding: 0.72rem 0;
     background-color: #0072F0;
   }
   .section-login .login-wrapper {
     max-width: 430px;
+  }
+}
+@media (min-width: 430px) and (max-width: 629.98px) {
+  .section-login .login-wrapper {
+    min-width: 375px;
+    width: 68.33%;
   }
 }
 /*# sourceMappingURL=login.css.map */

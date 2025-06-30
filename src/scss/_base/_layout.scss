@@ -67,8 +67,10 @@ a:not([class]) {
 
 img,
 svg {
-  image-rendering: smooth;
-  shape-rendering: geometricprecision;
+  // image-rendering: smooth;
+  // shape-rendering: geometricprecision;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .hidden {
@@ -136,7 +138,7 @@ svg {
 
 .wrapper {
   @include desktop {
-    width: calc(100% - 60px);
+    width: calc(100% - 48px);
     max-width: $wrapper-width;
     margin-right: auto;
     margin-left: auto;

@@ -2,7 +2,7 @@
 @use "variables" as *;
 
 @mixin desktop {
-  @media print, (min-width: 768px) {
+  @media print, (min-width: 430px) {
     @content;
   }
 }
@@ -26,13 +26,13 @@
 }
 
 @mixin tablet {
-  @media (min-width: 768px) and (max-width: 1279.98px) {
+  @media (min-width: 430px) and (max-width: 629.98px) {
     @content;
   }
 }
 
 @mixin mobile {
-  @media only screen and (max-width: 767.98px) {
+  @media only screen and (max-width: 429.98px) {
     @content;
   }
 }

@@ -14,17 +14,17 @@ block container
     .login-wrapper
       .wrapper
         .login-logo
-          img.object-common(src=imgCommonPC+"logo_img_01.svg" width="88" height="61" loading="eager" alt="atb")
+          img(src=imgCommonPC+"logo_img_01.svg" loading="eager" alt="atb")
 
         h2.login-title Login
 
-        <form action="/login" method="POST">
+        <form action="/login" method="POST" auto>
           .form-wrapper 
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+            <input type="text" id="username" name="username" placeholder="Enter your username" required autocomplete="username"/>
           .form-wrapper 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="password"/>
 
           .form-controller
             <button type="submit" class="button-common-primary trans">Log in</button>
@@ -40,11 +40,11 @@ block container
         <div class="login-footer">
           .footer-wrapper
             <a class="trans" href="https://www.atb.com">atb.com</a>
-            span |
+            span
             <a class="trans" href="#">Contact us</a>
-            span |
+            span
             <a class="trans" href="#">Terms</a>
-            span |
+            span
             <a class="trans" href="#">Security tips</a>
           small.footer-copyright &copy; ATB Financial 2025. All rights reserved.<br /> Authorized access only. Usage may be monitored.
         </div>
