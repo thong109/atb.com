@@ -1,0 +1,42 @@
+@charset "utf-8";
+@use "../../_base/base" as *;
+
+.card-common {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #d6d1c8;
+  border-radius: 0.1rem;
+  background-color: $color-light;
+
+  .card-wrapper {
+    display: block;
+    padding: 0.21rem 0.29rem 0.26rem;
+  }
+
+  .card-title {
+    position: relative;
+    margin-bottom: 0.17rem;
+    padding-bottom: 0.06rem;
+    border-bottom: 1px solid #05a584;
+    font-size: 0.18rem;
+    letter-spacing: 0.03em;
+
+    @include reset-text;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 16px;
+      background: url("../img/common/icn_arrow_02.svg") 50% 50% / 100% auto no-repeat;
+    }
+
+    @include reset-text;
+  }
+
+  @include desktop {
+    min-height: 193px;
+  }
+}

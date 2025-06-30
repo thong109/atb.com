@@ -1,0 +1,57 @@
+{
+  "extends": ["jquery", "eslint:recommended"],
+  "plugins": ["@cspell"],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script"
+  },
+  "rules": {
+    "no-new": 0,
+    "camelcase": 1,
+    "prefer-arrow-callback": "warn",
+    "no-var": "warn",
+    "prefer-const": "warn",
+    "func-style": ["warn", "expression"],
+    "space-in-parens": ["error", "never"],
+    "quotes": ["error", "single"],
+    "template-curly-spacing": ["error", "never"],
+    "computed-property-spacing": ["error", "never"],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "FunctionExpression",
+        "message": "Function expressions are not recommended."
+      }
+    ],
+    "@cspell/spellchecker": [
+      2,
+      {
+        "checkStrings": false,
+        "cspell": {
+          "words": ["keyvisual"],
+          "ignoreWords": [
+            "getElementById",
+            "getElementsByTagNameNS",
+            "getElementsByTagName",
+            "getElementsByClassName",
+            "getElementsByName",
+            "createElement"
+          ],
+          "ignoreRegExpList": ["/\\.data\\(/"],
+          "flagWords": ["do", "handle", "element", "elements", "data"]
+        }
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "WOW": "readonly",
+    "Swiper": "readonly",
+    "ScrollHint": "readonly"
+  },
+  "overrides": [],
+  "ignorePatterns": ["gulpfile.js"]
+}

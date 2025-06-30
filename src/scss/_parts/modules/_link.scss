@@ -1,0 +1,52 @@
+@charset "utf-8";
+@use "../../_base/base" as *;
+
+.link-common {
+  transition: border 0.3s ease;
+  border-bottom: 1px solid #00a684;
+  font-size: 0.18rem;
+  line-height: calc(25.5 / 18);
+  text-decoration: none;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  html.is-touchable & {
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+
+  .link-wrapper {
+    position: relative;
+    padding-right: 0.24rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      z-index: 1;
+      top: 0;
+      right: 0.04rem;
+      bottom: 0;
+      width: 0.08rem;
+      margin-top: 0.04rem;
+      background: url("../img/common/arrow-left.svg") 50% 50% / 100% auto no-repeat;
+    }
+
+    &::after {
+      top: 50%;
+      right: 0;
+      width: 0.16rem;
+      height: 0.16rem;
+      margin-top: 0.02rem;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: #00a684;
+    }
+  }
+}

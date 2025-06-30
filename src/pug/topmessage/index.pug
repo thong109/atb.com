@@ -1,0 +1,21 @@
+extends ../_layouts/default
+block vars
+  -path = ".."
+  -pageID = "message"
+  -pageTitle = "代表挨拶｜福岡県信用組合（公式ホームページ）"
+  -pageDescription = ""
+  -pageKeywords = ""
+  -imgPC = path+"/img/message/"
+  -imgSP = path+"/img/message/sp/"
+  -imgCommonPC = path+"/img/common/"
+  -imgCommonSP = path+"/img/common/sp/"
+block container
+  +breadcrumbCommon([
+    {
+      href: path+"/",
+      label: "トップ（個人のお客様）"
+    },
+    {
+      label: "理事長挨拶"
+    },
+  ])

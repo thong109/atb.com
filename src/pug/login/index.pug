@@ -1,0 +1,49 @@
+extends ../_layouts/default
+block vars
+  -path = ".."
+  -pageID = "login"
+  -pageTitle = "Login"
+  -pageDescription = ""
+  -pageKeywords = ""
+  -imgPC = path+"/img/login/"
+  -imgSP = path+"/img/login/sp/"
+  -imgCommonPC = path+"/img/common/"
+  -imgCommonSP = path+"/img/common/sp/"
+block container
+  section.section-login
+    .wrapper
+      .login-logo
+        img.image-common(src=imgCommonPC+"logo_img_01.svg" width="88" height="61" loading="eager" alt="atb")
+
+      h2.login-title Login
+
+      <form action="/login" method="POST">
+        .form-wrapper 
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required />
+        .form-wrapper 
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+        .form-controller
+          <button type="submit" class="button-common-primary trans">Log in</button>
+      </form>
+
+      <div class="login-links">
+        .links-wrapper
+          <a href="#" class="trans">Forgot username</a>
+        .links-wrapper
+          <a href="#" class="trans">Forgot password</a>
+      </div>
+
+      <div class="login-footer">
+        .footer-wrapper
+          <a class="trans" href="https://www.atb.com">atb.com</a>
+          span |
+          <a class="trans" href="#">Contact us</a>
+          span |
+          <a class="trans" href="#">Terms</a>
+          span |
+          <a class="trans" href="#">Security tips</a>
+        small.footer-copyright &copy; ATB Financial 2025. All rights reserved.<br /> Authorized access only. Usage may be monitored.
+      </div>

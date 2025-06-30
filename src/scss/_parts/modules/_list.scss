@@ -1,0 +1,25 @@
+@charset "utf-8";
+@use "../../_base/base" as *;
+
+.list-common-loan {
+  .list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+
+    @include reset-list;
+  }
+
+  @include desktop {
+    .list-item {
+      width: 50%;
+      max-width: 480px;
+    }
+  }
+
+  @include mobile {
+    .list-wrapper {
+      flex-direction: column;
+    }
+  }
+}

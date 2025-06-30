@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+$viewport-width: 1280px;
+$wrapper-width: 980px;
+$font-default: "Inter",
+sans-serif;
+$font-DIN: "din-2014",
+sans-serif;
+$fontsize-default: 0.16rem;
+$fontsize-title: 0.15rem;
+$fontweight-light: 300;
+$fontweight-default: 400;
+$fontweight-medium: 500;
+$fontweight-semibold: 600;
+$fontweight-bold: 700;
+$lineheight-default: calc(28.8 / 16);
+$color-default: #44444D;
+$color-light: #fff;
+$color-dark: #000;
+$color-background-primary: #0072F0;
+$color-background-secondary: rgb(0, 166, 132) linear-gradient(180deg, rgba(0, 166, 132, 1) 0%, rgba(0, 121, 96, 1) 100%);
+$color-border: #000025;

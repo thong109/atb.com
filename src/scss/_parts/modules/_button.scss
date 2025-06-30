@@ -1,0 +1,15 @@
+@charset "utf-8";
+@use "../../_base/base"as *;
+
+
+.button-common-primary {
+  color: $color-light;
+  text-align: center;
+  background-color: $color-background-primary;
+  min-height: 0.44rem;
+  width: 100%;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.16rem;
+  line-height: calc(24 / 16);
+}

@@ -1,0 +1,61 @@
+@charset "utf-8";
+@use "../../_base/base" as *;
+
+.block-common-highlight {
+  overflow: hidden;
+  border: 0.03rem solid #05a584;
+  border-radius: 0.1rem;
+
+  .block-label {
+    display: inline-block;
+    color: #00a684;
+    font-weight: 500;
+  }
+
+  .block-title {
+    @include reset-text;
+  }
+
+  .block-content {
+    font-size: 0.15rem;
+    line-height: calc(26.25 / 15);
+
+    .content-text {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include desktop {
+    padding: 25px 27px 24px;
+
+    .block-label {
+      margin-bottom: 20px;
+      font-size: 0.16rem;
+      line-height: calc(28 / 16);
+    }
+
+    .block-title {
+      margin-bottom: 18px;
+      font-size: 0.2rem;
+      line-height: calc(26.5 / 20);
+    }
+  }
+
+  @include mobile {
+    padding: 0.26rem 0.12rem 0.19rem;
+
+    .block-title {
+      margin-bottom: 0.07rem;
+      font-size: 0.16rem;
+      line-height: calc(26.25 / 16);
+    }
+
+    .block-label {
+      margin-bottom: 0.18rem;
+      font-size: 0.18rem;
+      line-height: calc(28 / 18);
+    }
+  }
+}
